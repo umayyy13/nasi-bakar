@@ -1,0 +1,142 @@
+* { 
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
+  font-family: sans-serif; 
+}
+
+body { 
+  background-color: #f4f4f9; 
+  padding: 16px; 
+  color: #333; 
+}
+
+header { 
+  text-align: center; 
+  margin-bottom: 20px; 
+}
+
+header h1 { 
+  color: #d35400; 
+  font-size: 1.8rem; 
+}
+
+header p { 
+  color: #666; 
+  font-size: 0.9rem; 
+}
+
+.grid { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  gap: 16px; 
+  margin-bottom: 24px; 
+}
+
+.card { 
+  background: #fff; 
+  border-radius: 8px; 
+  overflow: hidden; 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+  padding: 16px; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-between; 
+}
+
+.card img { 
+  width: 100%; 
+  height: 150px; 
+  object-fit: cover; 
+  border-radius: 6px; 
+  margin-bottom: 12px; 
+}
+
+.card h3 { 
+  font-size: 1.1rem; 
+  margin-bottom: 4px; 
+}
+
+.card .price { 
+  color: #e67e22; 
+  font-weight: bold; 
+  margin-bottom: 12px; 
+}
+
+.qty-control { 
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+  background: #eee; 
+  border-radius: 4px; 
+  padding: 4px 8px; 
+}
+
+.qty-btn { 
+  background: #d35400; 
+  color: white; 
+  border: none; 
+  width: 28px; 
+  height: 28px; 
+  border-radius: 4px; 
+  font-weight: bold; 
+  cursor: pointer; 
+}
+
+.qty-val { 
+  font-weight: bold; 
+}
+
+.checkout-section { 
+  background: #fff; 
+  padding: 16px; 
+  border-radius: 8px; 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+  max-width: 600px; 
+  margin: 0 auto; 
+}
+
+.form-group { 
+  margin-bottom: 12px; 
+}
+
+.form-group label { 
+  display: block; 
+  font-size: 0.85rem; 
+  margin-bottom: 4px; 
+  font-weight: bold; 
+}
+
+.form-group input, .form-group textarea { 
+  width: 100%; 
+  padding: 8px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+}
+
+.total-box { 
+  font-size: 1.2rem; 
+  font-weight: bold; 
+  text-align: right; 
+  margin: 16px 0; 
+  color: #27ae60; 
+}
+
+.btn-wa { 
+  display: block; 
+  width: 100%; 
+  background: #25d366; 
+  color: white; 
+  text-align: center; 
+  padding: 12px; 
+  border: none; 
+  border-radius: 6px; 
+  font-size: 1rem; 
+  font-weight: bold; 
+  cursor: pointer; 
+  text-decoration: none; 
+}
+
+.btn-wa:hover { 
+  background: #1eb857; 
+}
