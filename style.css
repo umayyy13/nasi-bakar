@@ -2,141 +2,201 @@
   box-sizing: border-box; 
   margin: 0; 
   padding: 0; 
-  font-family: sans-serif; 
+  font-family: 'Poppins', sans-serif; 
 }
 
 body { 
-  background-color: #f4f4f9; 
-  padding: 16px; 
-  color: #333; 
+  /* Menggunakan latar belakang biru muda keabuan yang modern & bersih */
+  background: #9db6f0;
+  min-height: 100vh;
+  padding: 24px 16px 48px; 
+  color: #1e293b; 
 }
 
 header { 
+  /* Header menggunakan warna hijau daun yang segar dan berwibawa */
+  background: #1b2843;
+  color: #ffffff;
   text-align: center; 
-  margin-bottom: 20px; 
+  padding: 32px 20px;
+  border-radius: 16px;
+  max-width: 960px;
+  margin: 0 auto 28px;
+  box-shadow: 0 4px 15px rgba(27, 67, 50, 0.15);
 }
 
 header h1 { 
-  color: #d35400; 
-  font-size: 1.8rem; 
+  font-size: 2rem; 
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #facc15; /* Sentuhan kuning hangat agar judulnya hidup */
 }
 
 header p { 
-  color: #666; 
-  font-size: 0.9rem; 
+  color: #e2e8f0; 
+  font-size: 0.95rem; 
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 .grid { 
   display: grid; 
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
-  gap: 16px; 
-  margin-bottom: 24px; 
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+  gap: 20px; 
+  margin-bottom: 32px; 
 }
 
+/* KARTU PRODUK: Putih bersih dengan bayangan lembut dan aksen merah cabai */
 .card { 
-  background: #fff; 
-  border-radius: 8px; 
+  background: #304777;
+  border-radius: 14px; 
   overflow: hidden; 
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); 
   padding: 16px; 
   display: flex; 
   flex-direction: column; 
   justify-content: space-between; 
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border-top: 5px solid #fdfeff /* Garis merah penanda rasa pedas/nasi bakar */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
 }
 
 .card img { 
   width: 100%; 
   height: 150px; 
   object-fit: cover; 
-  border-radius: 6px; 
+  border-radius: 10px; 
   margin-bottom: 12px; 
 }
 
 .card h3 { 
-  font-size: 1.1rem; 
+  font-size: 1.05rem; 
+  color: #1e293b; 
   margin-bottom: 4px; 
 }
 
 .card .price { 
-  color: #e67e22; 
-  font-weight: bold; 
-  margin-bottom: 12px; 
+  color: #f3f8f8; /* Harga warna merah terang yang pas */
+  font-weight: 700; 
+  font-size: 1.05rem;
+  margin-bottom: 14px; 
 }
 
 .qty-control { 
   display: flex; 
   align-items: center; 
   justify-content: space-between; 
-  background: #eee; 
-  border-radius: 4px; 
-  padding: 4px 8px; 
+  background: #f1f5f9; 
+  border: 1px solid #e2e8f0;
+  border-radius: 8px; 
+  padding: 6px 10px; 
 }
 
 .qty-btn { 
-  background: #d35400; 
+  background: #dc2626; /* Tombol plus-minus merah */
   color: white; 
   border: none; 
-  width: 28px; 
-  height: 28px; 
-  border-radius: 4px; 
+  width: 30px; 
+  height: 30px; 
+  border-radius: 6px; 
+  font-size: 1.1rem;
   font-weight: bold; 
   cursor: pointer; 
+  transition: background 0.2s;
+}
+
+.qty-btn:hover {
+  background: #b91c1c; 
 }
 
 .qty-val { 
-  font-weight: bold; 
+  font-weight: 700; 
+  font-size: 1rem;
+  color: #334155;
 }
 
+/* Bagian Form Checkout: Putih bersih senada */
 .checkout-section { 
-  background: #fff; 
-  padding: 16px; 
-  border-radius: 8px; 
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+  background: #304777; 
+  padding: 24px; 
+  border-radius: 16px; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); 
   max-width: 600px; 
   margin: 0 auto; 
+  border-top: 6px solid #f9fffc; /* Aksen hijau di atas form */
+}
+
+.checkout-section h3 {
+  color: #1e293b;
+  margin-bottom: 14px;
+  font-size: 1.25rem;
 }
 
 .form-group { 
-  margin-bottom: 12px; 
+  margin-bottom: 14px; 
 }
 
 .form-group label { 
   display: block; 
   font-size: 0.85rem; 
-  margin-bottom: 4px; 
-  font-weight: bold; 
+  margin-bottom: 6px; 
+  font-weight: 600; 
+  color: #1e293b;
 }
 
 .form-group input, .form-group textarea { 
   width: 100%; 
-  padding: 8px; 
-  border: 1px solid #ccc; 
-  border-radius: 4px; 
+  padding: 10px 12px; 
+  border: 1.5px solid #cbd5e1; 
+  background: #f8fafc;
+  border-radius: 8px; 
+  font-size: 0.95rem;
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+  outline: none;
+  border-color: #1b4332;
+  background: #ffffff;
 }
 
 .total-box { 
-  font-size: 1.2rem; 
-  font-weight: bold; 
-  text-align: right; 
-  margin: 16px 0; 
-  color: #27ae60; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f0fdf4;
+  border: 1px dashed #16a34a;
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-size: 1.15rem; 
+  margin: 18px 0; 
+  color: #166534; 
 }
 
 .btn-wa { 
   display: block; 
   width: 100%; 
-  background: #25d366; 
+  background: #25d366; /* Tombol hijau WhatsApp asli */
   color: white; 
   text-align: center; 
-  padding: 12px; 
+  padding: 14px; 
   border: none; 
-  border-radius: 6px; 
+  border-radius: 10px; 
   font-size: 1rem; 
-  font-weight: bold; 
+  font-weight: 700; 
   cursor: pointer; 
-  text-decoration: none; 
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+  transition: transform 0.2s, background 0.2s;
 }
 
 .btn-wa:hover { 
-  background: #1eb857; 
+  background: #1ebd5a;
+  transform: translateY(-2px);
 }

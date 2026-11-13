@@ -1,12 +1,12 @@
-// Nomor WA Penjual (Ganti ke nomor kamu, gunakan format 62)
-const WA_NUMBER = "+62895384464932";
+// Nomor WA Penjual (Gunakan format 62 tanpa tanda +)
+const WA_NUMBER = "62895384462";
 
 // Data Katalog Nasi Bakar
 const products = [
-  { id: 1, name: "Nasi Bakar Ayam Suwir", price: 15000, img: "https://via.placeholder.com/300x150?text=Nasi+Bakar+Ayam" },
-  { id: 2, name: "Nasi Bakar Cumi Pedas", price: 18000, img: "https://via.placeholder.com/300x150?text=Nasi+Bakar+Cumi" },
-  { id: 3, name: "Nasi Bakar Teri Medan", price: 14000, img: "https://via.placeholder.com/300x150?text=Nasi+Bakar+Teri" },
-  { id: 4, name: "Nasi Bakar Tongkol Balado", price: 16000, img: "https://via.placeholder.com/300x150?text=Nasi+Bakar+Tongkol" }
+  { id: 1, name: "Nasi Bakar Ayam Suwir", price: 15000, img: "https://via.placeholder.com/300x150/1b4332/ffffff?text=Nasi+Bakar+Ayam" },
+  { id: 2, name: "Nasi Bakar Cumi Pedas", price: 18000, img: "https://via.placeholder.com/300x150/9b2226/ffffff?text=Nasi+Bakar+Cumi" },
+  { id: 3, name: "Nasi Bakar Teri Medan", price: 14000, img: "https://via.placeholder.com/300x150/2d6a4f/ffffff?text=Nasi+Bakar+Teri" },
+  { id: 4, name: "Nasi Bakar Tongkol Balado", price: 16000, img: "https://via.placeholder.com/300x150/b91c1c/ffffff?text=Nasi+Bakar+Tongkol" }
 ];
 
 let cart = {};
@@ -86,7 +86,6 @@ function sendToWA() {
   text += `*Nama:* ${nama}\n`;
   text += `*Alamat/Catatan:* ${catatan ? catatan : '-'}`;
 
-  // Encode URL agar aman diarahkan ke WhatsApp
   const encodedText = encodeURIComponent(text);
   const waUrl = `https://wa.me/${WA_NUMBER}?text=${encodedText}`;
 
