@@ -26,12 +26,14 @@ header {
 header h1 { 
   /* Menggunakan font Playwrite AU SA Guides khusus untuk BEKALKOS_ID */
   font-family: 'Playwrite AU SA Guides', cursive; 
-  font-size: 7.2rem; 
-  font-weight: 400; /* Font ini umumnya optimal di berat normal/400 */
+  
+  /* Diubah dari 7.2rem menjadi ukuran yang proporsional dan responsif */
+  font-size: clamp(1.5rem, 4vw, 2.3rem); 
+  
+  font-weight: 400; 
   margin-bottom: 6px;
-  color: #ffff49; 
+  color: #ffff49; /* Warna kuning cerah Anda */
 }
-
 header p { 
   color: #e2e8f0; 
   font-size: 0.95rem; 
