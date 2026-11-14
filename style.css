@@ -2,11 +2,10 @@
   box-sizing: border-box; 
   margin: 0; 
   padding: 0; 
-  font-family: 'Poppins', sans-serif; 
+  font-family: 'Poppins', sans-serif; /* Font default untuk seluruh website */
 }
 
 body { 
-  /* Menggunakan latar belakang biru muda keabuan yang modern & bersih */
   background: #9db6f0;
   min-height: 100vh;
   padding: 24px 16px 48px; 
@@ -14,7 +13,6 @@ body {
 }
 
 header { 
-  /* Header menggunakan warna hijau daun yang segar dan berwibawa */
   background: #1b2843;
   color: #ffffff;
   text-align: center; 
@@ -26,10 +24,12 @@ header {
 }
 
 header h1 { 
-  font-size: 2rem; 
-  font-weight: 700;
+  /* Menggunakan font Playwrite AU SA Guides khusus untuk BEKALKOS_ID */
+  font-family: 'Playwrite AU SA Guides', cursive; 
+  font-size: 7.2rem; 
+  font-weight: 400; /* Font ini umumnya optimal di berat normal/400 */
   margin-bottom: 6px;
-  color: #facc15; /* Sentuhan kuning hangat agar judulnya hidup */
+  color: #ffff49; 
 }
 
 header p { 
@@ -49,7 +49,7 @@ header p {
   margin-bottom: 32px; 
 }
 
-/* KARTU PRODUK: Putih bersih dengan bayangan lembut dan aksen merah cabai */
+/* KARTU PRODUK */
 .card { 
   background: #304777;
   border-radius: 14px; 
@@ -60,7 +60,7 @@ header p {
   flex-direction: column; 
   justify-content: space-between; 
   transition: transform 0.25s ease, box-shadow 0.25s ease;
-  border-top: 5px solid #fdfeff /* Garis merah penanda rasa pedas/nasi bakar */
+  border-top: 5px solid #fdfeff;
 }
 
 .card:hover {
@@ -78,12 +78,12 @@ header p {
 
 .card h3 { 
   font-size: 1.05rem; 
-  color: #1e293b; 
+  color: #ffffff; 
   margin-bottom: 4px; 
 }
 
 .card .price { 
-  color: #f3f8f8; /* Harga warna merah terang yang pas */
+  color: #f3f8f8; 
   font-weight: 700; 
   font-size: 1.05rem;
   margin-bottom: 14px; 
@@ -100,7 +100,7 @@ header p {
 }
 
 .qty-btn { 
-  background: #dc2626; /* Tombol plus-minus merah */
+  background: #dc2626; 
   color: white; 
   border: none; 
   width: 30px; 
@@ -122,7 +122,7 @@ header p {
   color: #334155;
 }
 
-/* Bagian Form Checkout: Putih bersih senada */
+/* Bagian Form Checkout */
 .checkout-section { 
   background: #304777; 
   padding: 24px; 
@@ -130,11 +130,11 @@ header p {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); 
   max-width: 600px; 
   margin: 0 auto; 
-  border-top: 6px solid #f9fffc; /* Aksen hijau di atas form */
+  border-top: 6px solid #f9fffc; 
 }
 
 .checkout-section h3 {
-  color: #1e293b;
+  color: #ffffff;
   margin-bottom: 14px;
   font-size: 1.25rem;
 }
@@ -148,7 +148,7 @@ header p {
   font-size: 0.85rem; 
   margin-bottom: 6px; 
   font-weight: 600; 
-  color: #1e293b;
+  color: #ffffff;
 }
 
 .form-group input, .form-group textarea { 
@@ -183,7 +183,7 @@ header p {
 .btn-wa { 
   display: block; 
   width: 100%; 
-  background: #25d366; /* Tombol hijau WhatsApp asli */
+  background: #25d366; 
   color: white; 
   text-align: center; 
   padding: 14px; 
